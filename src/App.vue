@@ -42,7 +42,7 @@ export default {
                     var vm = this
                     axios({
                         method: 'get',
-                        url: 'http://192.168.0.99:5000/?q='+this.query,
+                        url: 'http://192.168.0.99/ylib/?q='+this.query,
                     })
                         .then(function (response) {
                             vm.answer = "Found "+_.capitalize(response.data.hits.total)
